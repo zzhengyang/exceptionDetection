@@ -47,7 +47,6 @@ print width, height
 # cv2.waitKey(0)
 
 
-
 left_top_vertical = pt.computeRadis(rectImg, offset, midHeight, offset, midWidth)
 left_top_horizon = pt.computeRadis(rectImg, offset, midWidth, offset, midHeight, flag=False)
 

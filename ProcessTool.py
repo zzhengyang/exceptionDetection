@@ -125,7 +125,7 @@ def computeRadis(img, x1, x2, y1, y2, flag = True):
         for width in range(y1, y2):
             tmplen = 0
             for heigh in range(x1, x2):
-                if img[heigh, width, 0] == 0:
+                if img[heigh, width] == 0:
                     tmplen = tmplen + 1
                 else:
                     if tmplen > maxlen:
@@ -137,7 +137,7 @@ def computeRadis(img, x1, x2, y1, y2, flag = True):
         for heigh in range(y1, y2):
             tmplen = 0
             for width in range(x1, x2):
-                if img[heigh, width, 0] == 0:
+                if img[heigh, width] == 0:
                     tmplen = tmplen + 1
                 else:
                     if tmplen > maxlen:
